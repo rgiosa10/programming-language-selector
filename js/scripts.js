@@ -81,10 +81,8 @@ function getInputsAndCalc() {
 function reset() {
   
   // Unhide form submit button
-  document.getElementById("form-submit-button").removeAttribute("class");
-  // Hide the reset button
-  document.getElementById("resetBtn").setAttribute("class", "hidden");
-  // Hide the results section
+  document.getElementById("form-submit-button").setAttribute("class", "btn btn-primary btn-lg");
+  // Hide the results section that includes reset button
   document.getElementById("result").setAttribute("class", "hidden");
 
   // Reset form inputs to default values
@@ -106,13 +104,13 @@ window.addEventListener("load", function() {
     langRecommendation = getInputsAndCalc();
     
     // Unhide results
-    document.getElementById("result").removeAttribute("class");
+    document.getElementById("result").setAttribute("class", "bottom");
 
     // Hide the form submit button
     document.getElementById("form-submit-button").setAttribute("class", "hidden");
 
     // Update results messaging with recommendation from survey
-    document.getElementById("result").innerText = "You should learn to program in " + langRecommendation;
+    document.getElementById("resultText").innerText = "You should learn to program in " + langRecommendation;
 
     // Unhide the reset button
     document.getElementById("resetBtn").removeAttribute("class");

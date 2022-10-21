@@ -25,3 +25,11 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+.bottom {
+  box-sizing: border-box;
+  background-color: lightskyblue;
+  width: 100%;
+  padding: 100 px;
+  border: black solid 2px;
+}
