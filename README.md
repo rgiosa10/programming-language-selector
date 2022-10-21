@@ -9,22 +9,22 @@
 * HTML
 * CSS
 * Bootstrap
-* JS
+* JavaScript
+* Git
 * Markdown
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This is an application for people interested in coding to decide which language they should learn first. The user fills out 5 silly questions, and depending on the response selected (upon submission of form) it designates either a 1 (top response) or 0 (bottom response). Those inputs are then added together for total points. Once that is calculated, a suggested language is determined (reference getInputsAndCalc function in js file). The suggested language is then shown at the bottom of the page. The user then has the opportunity to submit a new form again by clicking the "Reset to Submit Again!" button.
 
 ## Setup/Installation Requirements
 
-* https://github.com/rgiosa10/programming-language-selector.git
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* Go to https://github.com/rgiosa10/programming-language-selector.git to find the specific repository for this website.
+* Then open your terminal. I recommend going to your Desktop directory (command: $ cd Desktop).
+* Then clone the project by inputting: $ git clone https://github.com/rgiosa10/programming-language-selector.git
+* Go to the new directory (command: $ cd programming-language-selector) or open the directory folder on your desktop.
+* Finally, locate the index.html file and open it by double-clicking it, that will open the site on your browser.
+* Here is a link to the site on Git Hub Pages: https://rgiosa10.github.io/programming-language-selector
 
 ## Known Bugs
 
@@ -36,20 +36,8 @@ MIT License
 
 Copyright (c) 2022 Ruben Giosa
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
