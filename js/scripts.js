@@ -2,7 +2,7 @@
 
 function rain (rainSelection) {
   let totalPoints;
-  if (rainSelection === "Yes") {
+  if (rainSelection === "yes") {
     totalPoints = 1;
   } else {
     totalPoints = 0;
@@ -12,7 +12,7 @@ function rain (rainSelection) {
 
 function vacation (vacationSelection) {
   let totalPoints;
-  if (vacationSelection === "Warm") {
+  if (vacationSelection === "warm") {
     totalPoints = 1;
   } else {
     totalPoints = 0;
@@ -22,7 +22,7 @@ function vacation (vacationSelection) {
 
 function dogOrCat (dogOrCatSelection) {
   let totalPoints;
-  if (dogOrCat === "Dog") {
+  if (dogOrCatSelection === "dog") {
     totalPoints = 1;
   } else {
     totalPoints = 0;
@@ -32,7 +32,7 @@ function dogOrCat (dogOrCatSelection) {
 
 function sports (sportsSelection) {
   let totalPoints;
-  if (sportsSelection === "Yes") {
+  if (sportsSelection === "yes") {
     totalPoints = 1;
   } else {
     totalPoints = 0;
@@ -42,7 +42,7 @@ function sports (sportsSelection) {
 
 function beachOrHiking (beachOrHikingSelection) {
   let totalPoints;
-  if (beachOrHikingSelection === "Beach") {
+  if (beachOrHikingSelection === "beach") {
     totalPoints = 1;
   } else {
     totalPoints = 0;
@@ -50,7 +50,14 @@ function beachOrHiking (beachOrHikingSelection) {
   return totalPoints;
 };
 
-function pickLang(rainSelection,vacationSelection,dogOrCatSelection,sportsSelection,beachOrHikingSelection) {
+function getInputsAndCalc() {
+  // get inputs
+  const rainSelection = document.querySelector("input[name='rain']:checked").value;
+  const vacationSelection = document.querySelector("input[name='vacation']:checked").value;
+  const dogOrCatSelection = document.querySelector("input[name='dogOrCat']:checked").value;
+  const sportsSelection = document.querySelector("input[name='sports']:checked").value;
+  const beachOrHikingSelection = document.querySelector("input[name='beach']:checked").value;
+
   let totalPoints = 0;
 
   totalPoints += rain (rainSelection);
@@ -69,21 +76,6 @@ function pickLang(rainSelection,vacationSelection,dogOrCatSelection,sportsSelect
   return langRecommendation;
 };
 
-function addPoints () {
-
-}
-
-function getInputsAndCalc() {
-  // get inputs
-  const rainSelection = document.querySelector("input[name='rain']:checked").value;
-  const vacationSelection = document.querySelector("input[name='vacation']:checked").value;
-  const dogOrCatSelection = document.querySelector("input[name='dogOrCat']:checked").value;
-  const sportsSelection = document.querySelector("input[name='sports']:checked").value;
-  const beachOrHikingSelection = document.querySelector("input[name='beachOrHiking']:checked").value;
-
-  pickLang(rainSelection,vacationSelection,dogOrCatSelection,sportsSelection,beachOrHikingSelection);
-}
-
 // User Interface logic
 
 
@@ -92,9 +84,10 @@ window.addEventListener("load", function() {
   
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    form.addEventListener("submit", getInputsAndCalc);
+    // form.addEventListener("submit", getInputsAndCalc);
+    langRecommendation = getInputsAndCalc();
     // document.getElementById("radio-form").addEventListener("submit", getInputsAndCalc);
     document.getElementById("result").removeAttribute("class");
-    document.getElementById("result").innerText = "You should learn to program in " + pickLang();
+    document.getElementById("result").innerText = "You should learn to program in " + langRecommendation;
   })
 });
