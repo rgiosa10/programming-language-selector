@@ -116,9 +116,7 @@ window.addEventListener("load", function() {
 
     // Unhide the reset button
     document.getElementById("resetBtn").removeAttribute("class");
-
+    // Event Listener for clicking the reset button
     resetBtn.addEventListener("click", reset);
-
   });
-
 });

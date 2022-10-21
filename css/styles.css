@@ -1,3 +1,27 @@
 .hidden {
   display: none;
 }
+
+.span {
+  color: brown;
+}
+
+.logo1 {
+  align-items: flex-start;
+  width: 22%;
+  margin-right: 25px;
+}
+
+.logo-next {
+  float:inline-end;
+  height: 100%;
+  width: 22%;
+  margin-right: 25px;
+  padding-top: 25px;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
