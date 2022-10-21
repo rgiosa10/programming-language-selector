@@ -78,16 +78,36 @@ function getInputsAndCalc() {
 
 // User Interface logic
 
+function resetbutton() {
+  document.getElementById("form-submit-button").removeAttribute("class");
+  document.getElementById("resetbutton").setAttribute("class", "hidden");
+  document.getElementById("result").setAttribute("class", "hidden");
+
+  document.querySelector("input[name='rain']:checked").value = "yes";
+  document.querySelector("input[name='vacation']:checked").value = "warm";
+  document.querySelector("input[name='dogOrCat']:checked").value = "cold";
+  document.querySelector("input[name='sports']:checked").value = "dog";
+  document.querySelector("input[name='beach']:checked").value = "yes";
+
+};
 
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
-  
+  let resetbutton = document.getElementById("resetButton");
+
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     // form.addEventListener("submit", getInputsAndCalc);
     langRecommendation = getInputsAndCalc();
     // document.getElementById("radio-form").addEventListener("submit", getInputsAndCalc);
     document.getElementById("result").removeAttribute("class");
+    document.getElementById("form-submit-button").setAttribute("class", "hidden");
     document.getElementById("result").innerText = "You should learn to program in " + langRecommendation;
+    document.getElementById("resetButton").removeAttribute("class");
+
+    resetbutton.addEventListener("click", resetbutton);
   })
+
+  
+
 });
