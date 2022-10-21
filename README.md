@@ -2,7 +2,7 @@
 
 #### By Ruben Giosa
 
-#### This is an application for people interested in coding to decide which language they should learn first.
+#### This is an application for people interested in coding to decide which language they should learn first between Python, JavaScript, and Go. User answers five silly questions, upon submission of the form it will recommend one of those three languages.
 
 ## Technologies Used
 
@@ -23,7 +23,7 @@ This is an application for people interested in coding to decide which language 
 * Then open your terminal. I recommend going to your Desktop directory (command: $ cd Desktop).
 * Then clone the project by inputting: $ git clone https://github.com/rgiosa10/programming-language-selector.git
 * Go to the new directory (command: $ cd programming-language-selector) or open the directory folder on your desktop.
-* Finally, locate the index.html file and open it by double-clicking it, that will open the site on your browser.
+* Finally, locate the index.html file and open it by double-clicking it, that will open the app on your web browser.
 * Here is a link to the site on Git Hub Pages: https://rgiosa10.github.io/programming-language-selector
 
 ## Known Bugs
