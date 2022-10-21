@@ -1,5 +1,6 @@
 // Business logic
 
+// translates input selection to 1 or 0
 function rain (rainSelection) {
   let totalPoints;
   if (rainSelection === "yes") {
@@ -10,6 +11,7 @@ function rain (rainSelection) {
   return totalPoints;
 };
 
+// translates input selection to 1 or 0
 function vacation (vacationSelection) {
   let totalPoints;
   if (vacationSelection === "warm") {
@@ -20,6 +22,7 @@ function vacation (vacationSelection) {
   return totalPoints;
 };
 
+// translates input selection to 1 or 0
 function dogOrCat (dogOrCatSelection) {
   let totalPoints;
   if (dogOrCatSelection === "dog") {
@@ -30,6 +33,7 @@ function dogOrCat (dogOrCatSelection) {
   return totalPoints;
 };
 
+// translates input selection to 1 or 0
 function sports (sportsSelection) {
   let totalPoints;
   if (sportsSelection === "yes") {
@@ -40,6 +44,7 @@ function sports (sportsSelection) {
   return totalPoints;
 };
 
+// translates input selection to 1 or 0
 function beachOrHiking (beachOrHikingSelection) {
   let totalPoints;
   if (beachOrHikingSelection === "beach") {
@@ -50,6 +55,7 @@ function beachOrHiking (beachOrHikingSelection) {
   return totalPoints;
 };
 
+// Calculates which language to learn
 function getInputsAndCalc() {
   // get inputs
   const rainSelection = document.querySelector("input[name='rain']:checked").value;
@@ -68,7 +74,7 @@ function getInputsAndCalc() {
   
   if (totalPoints === 5) {
     langRecommendation = "Python";
-  } else if ( totalPoints < 5 && totalPoints > 1) {
+  } else if (totalPoints < 5 && totalPoints > 1) {
     langRecommendation = "JavaScript";
   } else {
     langRecommendation = "Go";
@@ -76,6 +82,7 @@ function getInputsAndCalc() {
   return langRecommendation;
 };
 
+// Calculates the "A little bit about the language:" output
 function langSummary() {
   let langSummary;
   if (langRecommendation === "Python") {
@@ -86,11 +93,11 @@ function langSummary() {
     langSummary = "Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency. It is often referred to as Golang because of its former domain name, golang.org, but its proper name is Go.";
   }
   return langSummary;
-}
-
+};
 
 // User Interface logic
 
+// Actions to take place when reset button is clicked
 function reset() {
   // Unhide form submit button
   document.getElementById("form-submit-button").setAttribute("class", "btn btn-primary btn-lg");
@@ -124,7 +131,7 @@ window.addEventListener("load", function() {
     document.getElementById("form-submit-button").setAttribute("class", "hidden");
 
     // Update results messaging with recommendation from survey
-    document.getElementById("resultText").innerText = "Learn to program " + langRecommendation + "!";
+    document.getElementById("resultText").innerText = "Learn " + langRecommendation + "!";
     // Update results messaging that provides detail from Wikipedia about lang
     document.getElementById("resultSummary").innerText = langSummaryText;
 
