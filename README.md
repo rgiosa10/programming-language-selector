@@ -2,7 +2,7 @@
 
 #### By Ruben Giosa
 
-#### This is an application for people interested in coding to decide which language they should learn first between Python, JavaScript, and Go. User answers five silly questions, upon submission of the form it will recommend one of those three languages.
+#### This is an application for people interested in coding to decide which language they should learn first between Python, JavaScript, and Go. The user answers five silly questions, upon submission of the form it will recommend one of those three languages.
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-This is an application for people interested in coding to decide which language they should learn first. The user fills out 5 silly questions, and depending on the response selected (upon submission of form) it designates either a 1 (top response) or 0 (bottom response). Those inputs are then added together for total points. Once that is calculated, a suggested language is determined (reference getInputsAndCalc function in js file). The suggested language is then shown at the bottom of the page. The user then has the opportunity to submit a new form again by clicking the "Reset to Submit Again!" button.
+This is an application for people interested in coding to decide which language they should learn first. The user fills out 5 silly questions, and then submits the form. Upon submission of form, JavaScript logic designates either a 1 (top response) or 0 (bottom response) for each of the selected responses. Those inputs are then added together for total points. Once that is calculated, a suggested language is determined (reference getInputsAndCalc function in js file). The suggested language is then shown at the bottom of the page, with some additional information about the language. The user then has the opportunity to submit a new form again by clicking the "Reset to Submit Again!" button.
 
 ## Setup/Installation Requirements
 

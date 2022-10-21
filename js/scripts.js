@@ -72,9 +72,9 @@ function getInputsAndCalc() {
   totalPoints += sports (sportsSelection);
   totalPoints += beachOrHiking (beachOrHikingSelection);
   
-  if (totalPoints === 5) {
+  if (totalPoints > 3) {
     langRecommendation = "Python";
-  } else if (totalPoints < 5 && totalPoints > 1) {
+  } else if (totalPoints < 4 && totalPoints > 1) {
     langRecommendation = "JavaScript";
   } else {
     langRecommendation = "Go";
