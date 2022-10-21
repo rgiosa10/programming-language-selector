@@ -8,28 +8,27 @@
 
 .logo1 {
   align-items: flex-start;
-  width: 22%;
+  width: 33%;
   margin-right: 25px;
 }
 
 .logo-next {
   float:inline-end;
   height: 100%;
-  width: 22%;
+  width: 33%;
   margin-right: 25px;
   padding-top: 25px;
 }
 
 .images {
+  
   display: flex;
   width: 100%;
   box-sizing: border-box;
 }
 
 .bottom {
-  box-sizing: border-box;
   background-color: lightskyblue;
-  width: 100%;
-  padding: 100 px;
+  padding: 5%;
   border: black solid 2px;
 }

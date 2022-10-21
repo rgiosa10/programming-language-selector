@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +14,17 @@
     <div class="container">
       <h1 class="display-4">Programming Language Selector</h1>
       <p class="lead">Have you ever asked yourself, what is the best programming language for me to learn first between: <span class="span" >Python, JavaScript and Go?</span></p>
-      <p class="lead">We have got you covered! Fill out the quesitions below to find out:</p>
     </div>
   </div>
 
   <div class="container">
     <div class="images">
-      <img class="logo1" src="https://blog.insaid.co/wp-content/uploads/2019/04/Python-logo.jpg" alt="python">
-      <img class="logo-next" src="https://thumbnail.imgbin.com/3/4/14/imgbin-javascript-programmer-node-js-web-application-markup-language-RuqdjimCdeuw28z13YaFVWWx6_t.jpg" alt="JavaScript">
+      <img class="logo1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="python">
+      <img class="logo-next" src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript">
       <img class="logo-next" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="go">
     </div><br>
+
+    <p class="lead">We have got you covered! Fill out the quesitions below to find out:</p>
 
     <form id="radio-form">
       <h4>Do you like walks in the rain?</h4>
@@ -79,13 +80,14 @@
       <button class="btn btn-primary btn-lg" id="form-submit-button" type="submit">Submit</button>
     </form><br>
 
+    <button id="resetBtn" type="button" class="hidden" >Reset to Submit Again!</button>
+
     <div id="result" class="hidden">
-      <div class=""jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid">
         <h2 id="resultText" class="display-4">Placeholder: Results text will show up here</h2>
+        <h5><strong>A little bit about the language:</strong></h5>
         <p id="resultSummary"></p>
       </div>
-
-      <button id="resetBtn" type="button" class="btn btn-primary btn-lg">Reset to Submit Again!</button>
     </div>
     <br>
     <br>
