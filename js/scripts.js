@@ -78,36 +78,43 @@ function getInputsAndCalc() {
 
 // User Interface logic
 
-function resetbutton() {
+function reset() {
+  
+  // Unhide form submit button
   document.getElementById("form-submit-button").removeAttribute("class");
-  document.getElementById("resetbutton").setAttribute("class", "hidden");
+  // Hide the reset button
+  document.getElementById("resetBtn").setAttribute("class", "hidden");
+  // Hide the results section
   document.getElementById("result").setAttribute("class", "hidden");
 
-  document.querySelector("input[name='rain']:checked").value = "yes";
-  document.querySelector("input[name='vacation']:checked").value = "warm";
-  document.querySelector("input[name='dogOrCat']:checked").value = "cold";
-  document.querySelector("input[name='sports']:checked").value = "dog";
-  document.querySelector("input[name='beach']:checked").value = "yes";
-
+  // Reset previous answers
+  
 };
 
+// Wait for page to load, then run these functions
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
-  let resetbutton = document.getElementById("resetButton");
+  let resetBtn = document.getElementById("resetBtn");
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    // form.addEventListener("submit", getInputsAndCalc);
+    // Collect inputs and calculate recommended languange;
     langRecommendation = getInputsAndCalc();
-    // document.getElementById("radio-form").addEventListener("submit", getInputsAndCalc);
+    
+    // Unhide results
     document.getElementById("result").removeAttribute("class");
+
+    // Hide the form submit button
     document.getElementById("form-submit-button").setAttribute("class", "hidden");
+
+    // Update results messaging with recommendation from survey
     document.getElementById("result").innerText = "You should learn to program in " + langRecommendation;
-    document.getElementById("resetButton").removeAttribute("class");
 
-    resetbutton.addEventListener("click", resetbutton);
-  })
+    // Unhide the reset button
+    document.getElementById("resetBtn").removeAttribute("class");
 
-  
+    resetBtn.addEventListener("click", reset);
+
+  });
 
 });
