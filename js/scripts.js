@@ -87,8 +87,12 @@ function reset() {
   // Hide the results section
   document.getElementById("result").setAttribute("class", "hidden");
 
-  // Reset previous answers
-  
+  // Reset form inputs to default values
+  document.getElementById("rainDefault").checked = true;
+  document.getElementById("vacationDefault").checked = true;
+  document.getElementById("dogOrCatDefault").checked = true;
+  document.getElementById("sportsDefault").checked = true;
+  document.getElementById("beachDefault").checked = true;
 };
 
 // Wait for page to load, then run these functions
