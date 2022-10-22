@@ -28,7 +28,7 @@ This is an application for people interested in coding to decide which language 
 
 ## Known Bugs
 
-* No known bugs at this time
+* No known bugs at this time.
 
 ## License
 
