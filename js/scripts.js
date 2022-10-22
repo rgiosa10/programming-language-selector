@@ -60,7 +60,7 @@ function getInputsAndCalc() {
   // get inputs
   const rainSelection = document.querySelector("input[name='rain']:checked").value;
   const vacationSelection = document.querySelector("input[name='vacation']:checked").value;
-  const dogOrCatSelection = document.querySelector("input[name='dogOrCat']:checked").value;
+  const dogOrCatSelection = document.querySelector("input[name='dog-cat']:checked").value;
   const sportsSelection = document.querySelector("input[name='sports']:checked").value;
   const beachOrHikingSelection = document.querySelector("input[name='beach']:checked").value;
 
@@ -103,20 +103,20 @@ function reset() {
   document.getElementById("form-submit-button").setAttribute("class", "btn btn-primary btn-lg");
   // Hide the results section and reset button
   document.getElementById("result").setAttribute("class", "hidden");
-  document.getElementById("resetBtn").setAttribute("class", "hidden");
+  document.getElementById("reset-btn").setAttribute("class", "hidden");
 
   // Reset form inputs to default values
-  document.getElementById("rainDefault").checked = true;
-  document.getElementById("vacationDefault").checked = true;
-  document.getElementById("dogOrCatDefault").checked = true;
-  document.getElementById("sportsDefault").checked = true;
-  document.getElementById("beachDefault").checked = true;
+  document.getElementById("rain-default").checked = true;
+  document.getElementById("vacation-default").checked = true;
+  document.getElementById("dog-default").checked = true;
+  document.getElementById("sports-default").checked = true;
+  document.getElementById("beach-default").checked = true;
 };
 
 // Wait for page to load, then run these functions
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
-  let resetBtn = document.getElementById("resetBtn");
+  let resetBtn = document.getElementById("reset-btn");
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -136,7 +136,7 @@ window.addEventListener("load", function() {
     document.getElementById("resultSummary").innerText = langSummaryText;
 
     // Unhide the reset button
-    document.getElementById("resetBtn").setAttribute("class","btn btn-outline-warning");
+    document.getElementById("reset-btn").setAttribute("class","btn btn-outline-warning");
     // Event Listener for clicking the reset button
     resetBtn.addEventListener("click", reset);
   });
