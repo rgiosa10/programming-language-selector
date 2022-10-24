@@ -15,7 +15,7 @@
 
 ## Description
 
-This is an application for people interested in coding to decide which language they should learn first. The user fills out 5 silly questions, and then submits the form. Upon submission of form, JavaScript logic designates either a 1 (top response) or 0 (bottom response) for each of the selected responses. Those inputs are then added together for total points. Once that is calculated, a suggested language is determined (reference getInputsAndCalc function in js file). The suggested language is then shown at the bottom of the page, with some additional information about the language. The user then has the opportunity to submit a new form again by clicking the "Reset to Submit Again!" button.
+This is an application for people interested in coding to decide which language they should learn first. The user fills out 5 silly questions, and then submits the form. Upon submission of form,  logic is built (using JavaScript) that designates either a 1 (top response) or 0 (bottom response) for each of the selected responses. Those inputs are then added together for total points. Once that is calculated, a suggested language is determined (reference getInputsAndCalc function in js file). The suggested language is then shown at the bottom of the page, with some additional information about the language. The user then has the opportunity to submit a new form again by clicking the "Reset to Submit Again!" button.
 
 ## Setup/Installation Requirements
 
