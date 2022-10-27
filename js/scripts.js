@@ -1,7 +1,7 @@
 // Business logic
 
 // translates input selection to 1 or 0
-function rain (rainSelection) {
+function rain(rainSelection) {
   let totalPoints;
   if (rainSelection === "yes") {
     totalPoints = 1;
@@ -12,7 +12,7 @@ function rain (rainSelection) {
 };
 
 // translates input selection to 1 or 0
-function vacation (vacationSelection) {
+function vacation(vacationSelection) {
   let totalPoints;
   if (vacationSelection === "warm") {
     totalPoints = 1;
@@ -23,7 +23,7 @@ function vacation (vacationSelection) {
 };
 
 // translates input selection to 1 or 0
-function dogOrCat (dogOrCatSelection) {
+function dogOrCat(dogOrCatSelection) {
   let totalPoints;
   if (dogOrCatSelection === "dog") {
     totalPoints = 1;
@@ -34,7 +34,7 @@ function dogOrCat (dogOrCatSelection) {
 };
 
 // translates input selection to 1 or 0
-function sports (sportsSelection) {
+function sports(sportsSelection) {
   let totalPoints;
   if (sportsSelection === "yes") {
     totalPoints = 1;
@@ -45,7 +45,7 @@ function sports (sportsSelection) {
 };
 
 // translates input selection to 1 or 0
-function beachOrHiking (beachOrHikingSelection) {
+function beachOrHiking(beachOrHikingSelection) {
   let totalPoints;
   if (beachOrHikingSelection === "beach") {
     totalPoints = 1;
@@ -66,11 +66,11 @@ function getInputsAndCalc() {
 
   let totalPoints = 0;
 
-  totalPoints += rain (rainSelection);
-  totalPoints += vacation (vacationSelection);
-  totalPoints += dogOrCat (dogOrCatSelection);
-  totalPoints += sports (sportsSelection);
-  totalPoints += beachOrHiking (beachOrHikingSelection);
+  totalPoints += rain(rainSelection);
+  totalPoints += vacation(vacationSelection);
+  totalPoints += dogOrCat(dogOrCatSelection);
+  totalPoints += sports(sportsSelection);
+  totalPoints += beachOrHiking(beachOrHikingSelection);
   
   if (totalPoints > 3) {
     langRecommendation = "Python";
