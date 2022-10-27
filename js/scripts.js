@@ -72,6 +72,7 @@ function getInputsAndCalc() {
   totalPoints += sports(sportsSelection);
   totalPoints += beachOrHiking(beachOrHikingSelection);
   
+  let langRecommendation;
   if (totalPoints > 3) {
     langRecommendation = "Python";
   } else if (totalPoints < 4 && totalPoints > 1) {
@@ -83,7 +84,7 @@ function getInputsAndCalc() {
 };
 
 // Calculates the "A little bit about the language:" output
-function langSummary() {
+function langSummary(langRecommendation) {
   let langSummary;
   if (langRecommendation === "Python") {
     langSummary = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. It is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a 'batteries included' language due to its comprehensive standard library.";
@@ -121,8 +122,8 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     // Collect inputs and calculate recommended languange;
-    langRecommendation = getInputsAndCalc();
-    langSummaryText = langSummary(langRecommendation);
+    let langRecommendation = getInputsAndCalc();
+    let langSummaryText = langSummary(langRecommendation);
     
     // Unhide results
     document.getElementById("result").setAttribute("class", "bottom");
